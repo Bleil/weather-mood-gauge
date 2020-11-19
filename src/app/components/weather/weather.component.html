@@ -1,0 +1,20 @@
+<tabs (selectedTabChange)="onSelectedTabChanged($event)">
+  <tab [id]="citiesTabs.amsterdam.id" [title]="citiesTabs.amsterdam.title">
+    <div class="gauge-wrapper">
+      <gauge *ngIf="!citiesTabs.amsterdam.fetching" [mood]="citiesTabs.amsterdam.mood"></gauge>
+      <p *ngIf="citiesTabs.amsterdam.fetching" class="fetching-message">Fetching data...</p>
+    </div>
+  </tab>
+  <tab [id]="citiesTabs.moscow.id" [title]="citiesTabs.moscow.title">
+    <div class="gauge-wrapper">
+      <gauge *ngIf="!citiesTabs.moscow.fetching" [mood]="citiesTabs.moscow.mood"></gauge>
+      <p *ngIf="citiesTabs.moscow.fetching" class="fetching-message">Fetching data...</p>
+    </div>
+  </tab>
+  <tab [id]="citiesTabs.newYork.id" [title]="citiesTabs.newYork.title">
+    <div class="gauge-wrapper">
+      <gauge *ngIf="!citiesTabs.newYork.fetching" [mood]="citiesTabs.newYork.mood"></gauge>
+      <p *ngIf="citiesTabs.newYork.fetching" class="fetching-message">Fetching data...</p>
+    </div>
+  </tab>
+</tabs>

@@ -1,0 +1,44 @@
+@import '../../../../../../assets/styles/utils';
+@import '../../../../../../assets/styles/fonts';
+@import '../../../../../../assets/styles/colors';
+
+:host {
+    @extend %default-wrapper;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-headers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    li {
+        min-width: 200px;
+        padding: 12px 24px;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-align: center;
+        font-family: $montserrat;
+        font-size: 18px;
+        font-weight: $font-weight-light;
+        border-bottom: 1px solid $border-light;
+        color: $border;        
+        outline: none;
+        user-select: none;
+        will-change: color, border-bottom, font-weight;
+        transition: 0.25s ease;
+
+        &.active {
+            color: $blue;
+            border-bottom: 3px solid $blue;
+            font-weight: $font-weight-semi-bold;
+        }
+    }
+}
