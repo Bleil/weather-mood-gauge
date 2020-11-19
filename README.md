@@ -1,6 +1,7 @@
 # Weather Mood
 
-This is the code challenge for A Big Circle - Amsterdam/Netherlands.
+This is the code challenge for A Bigger Circle - Amsterdam/Netherlands.
+https://www.abiggercircle.com/
 
 ## Before start
 
